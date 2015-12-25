@@ -1,0 +1,19 @@
+{
+  "name": "chrome-script-execution",
+  "version": "1.0.0",
+  "description": "A util for executing scripts on Chrome Extension",
+  "main": "script-execution.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chrome"
+  ],
+  "author": "Ninh Pham",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1"
+  }
+}
