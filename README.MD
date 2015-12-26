@@ -5,7 +5,7 @@ From Chrome v32, it supports [Promise][1]. It's easy to [chrome.tabs.executeScri
 
 ```javascript
 new ScriptExecution(tab.id)
-    .executeScript("js/jquery.js", "js/script.js")
+    .executeScripts("js/jquery.js", "js/script.js")
     .then(s => s.executeCodes('console.log("executes code...")'))
     .then(s => s.injectCss("css/style.css"))
     .then(s => console.log('done'));
@@ -15,7 +15,7 @@ OR
 ```javascript
 let executer = new ScriptExecution(tab.id);
 
-executer.executeScript("js/jquery.js", "js/script.js")
+executer.executeScripts("js/jquery.js", "js/script.js")
     .then(s => s.executeCodes('console.log("executes code...")'))
     .then(s => s.injectCss("css/style.css"))
     .then(s => console.log('done'));
